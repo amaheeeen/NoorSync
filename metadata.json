@@ -1,0 +1,6 @@
+{
+  "name": "NoorSync - Islamic Companion & Prayer Times",
+  "description": "Spatial emerald liquid glass Islamic companion with offline IndexedDB, autonomous Qibla compass, Khatam reading habit planner, smart Suhoor & Imsak engine, personal Dua & Istikharah reflection journal, and high-fidelity smart audio hub.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

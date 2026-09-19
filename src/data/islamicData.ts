@@ -1,0 +1,198 @@
+import { AdhkarItem, CityLocation, IstikharahStep } from '../types';
+
+export const POPULAR_CITIES: CityLocation[] = [
+  { name: 'Jakarta', country: 'Indonesia', lat: -6.2088, lng: 106.8456, timezoneOffset: 7 },
+  { name: 'Makkah', country: 'Saudi Arabia', lat: 21.4225, lng: 39.8262, timezoneOffset: 3 },
+  { name: 'Medina', country: 'Saudi Arabia', lat: 24.4672, lng: 39.6111, timezoneOffset: 3 },
+  { name: 'Kuala Lumpur', country: 'Malaysia', lat: 3.1390, lng: 101.6869, timezoneOffset: 8 },
+  { name: 'Cairo', country: 'Egypt', lat: 30.0444, lng: 31.2357, timezoneOffset: 2 },
+  { name: 'London', country: 'United Kingdom', lat: 51.5074, lng: -0.1278, timezoneOffset: 0 },
+  { name: 'Istanbul', country: 'Turkey', lat: 41.0082, lng: 28.9784, timezoneOffset: 3 },
+  { name: 'Surabaya', country: 'Indonesia', lat: -7.2575, lng: 112.7521, timezoneOffset: 7 },
+  { name: 'Bandung', country: 'Indonesia', lat: -6.9175, lng: 107.6191, timezoneOffset: 7 },
+];
+
+export const ISTIKHARAH_STEPS: IstikharahStep[] = [
+  {
+    title: '1. Prerequisites & Clear Intent (Niyyah)',
+    subtitle: 'Wudhu, ritual purity, and entering with an open, surrendered heart',
+    iconName: 'heart-handshake',
+    niyyah: "أُصَلِّي سُنَّةَ الاِسْتِخَارَةِ رَكْعَتَيْنِ لِلَّهِ تَعَالَى\n\"Ushalli sunnatal-istikharati rak'ataini lillahi Ta'ala\"\n(I intend to pray two rak'ahs of Sunnah Istikharah for the sake of Allah).",
+    body: [
+      'Ensure proper ritual purity through Wudhu and face the Qibla in a quiet environment.',
+      'Enter without a rigid prior bias or stubborn preference; surrender the outcome completely to Allah’s infinite knowledge and decree.',
+    ],
+    tip: 'Scholars recommend praying Istikharah especially at quiet times like the last third of the night or between Maghrib and Isha.',
+  },
+  {
+    title: '2. First Rakaat (Rakaat 1)',
+    subtitle: 'Takbiratul Ihram, Surah Al-Fatihah, and Surah Al-Kafirun',
+    iconName: 'sparkles',
+    surahRecommendation: 'Recite Surah Al-Fatihah followed by Surah Al-Kafirun (قُلْ يَا أَيُّهَا الْكَافِرُونَ) as recommended by the majority of scholars.',
+    body: [
+      'Begin with Takbiratul Ihram ("Allahu Akbar") with pure sincerity in your heart.',
+      'Recite Surah Al-Fatihah clearly, followed by Surah Al-Kafirun to emphasize total monotheism and reliance on Allah alone.',
+      'Perform Ruku’ and two Sujood with calmness and measured tranquility (tuma’ninah).',
+    ],
+    tip: 'Keep your gaze focused on the place of prostration and make prolonged sincere du’a in prostration.',
+  },
+  {
+    title: '3. Second Rakaat & Taslim (Rakaat 2)',
+    subtitle: 'Surah Al-Ikhlas, Final Tashahhud, and Taslim',
+    iconName: 'feather',
+    surahRecommendation: 'Recite Surah Al-Fatihah followed by Surah Al-Ikhlas (قُلْ هُوَ اللَّهُ أَحَدٌ).',
+    body: [
+      'Rise steadily for the second rakaat, reciting Surah Al-Fatihah followed by Surah Al-Ikhlas.',
+      'Complete Ruku’ and Sujood with full focus.',
+      'Sit for the final Tashahhud (Tahiyyat Akhir), send blessings upon the Prophet ﷺ (Shalawat Ibrahimiyyah), and pronounce the Salam to both right and left shoulders.',
+    ],
+    tip: 'Do not rush after salam; remain in seated position facing the Qibla for the supplication.',
+  },
+  {
+    title: '4. Supplication of Istikharah (Do’a)',
+    subtitle: 'Praising Allah, sending Shalawat, and vocalizing your choice',
+    iconName: 'scroll',
+    body: [
+      'Raise your hands with humility and gratitude. Begin by praising Allah and sending peace upon the Messenger of Allah ﷺ.',
+      'Recite the authentic Do’a Al-Istikharah taught directly by Prophet Muhammad ﷺ in Sahih Al-Bukhari.',
+      'When reaching "...in kana hadzal amru..." (if this matter is good for me...), explicitly state the specific decision or affair in your mind or words.',
+    ],
+    tip: 'After the prayer, proceed with whatever option becomes easiest or feels most upright, observing the natural progression of events.',
+  },
+];
+
+export const ISTIKHARAH_DUA = {
+  title: "Do'a Sholat Istikharah",
+  arabic: `اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ، وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلَا أَقْدِرُ، وَتَعْلَمُ وَلَا أَعْلَمُ، وَأَنْتَ عَلَّامُ الْغُيُوبِ. اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الْأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ، وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الْأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ`,
+  latin: `"Allahumma inni astakhiruka bi'ilmika wa astaqdiruka biqudratika wa as'aluka min fadlikal-'adhim, fa'innaka taqdiru wa la aqdir, wa ta'lamu wa la a'lam, wa Anta 'Allamul-ghuyub. Allahumma in kunta ta'lamu anna hadzal amra khairun li fi dini wa ma'asyi wa 'aqibati amri faqdurhu li wa yassirhu li tsumma barik li fih. Wa in kunta ta'lamu anna hadzal amra syarrun li fi dini wa ma'asyi wa 'aqibati amri fasrifhu 'anni wasrifni 'anhu waqdur liyal-khaira haitsu kana tsumma ardini bih."`,
+  translationId: `"Ya Allah, sesungguhnya aku memohon petunjuk kebaikan kepada-Mu dengan ilmu-Mu, memohon ketetapan dengan kekuasaan-Mu, dan memohon karunia-Mu yang agung. Karena sesungguhnya Engkau Maha Berkuasa sedangkan aku tidak berdaya, Engkau Maha Mengetahui sedangkan aku tidak mengetahui, dan Engkaulah Yang Maha Mengetahui segala hal gaib. Ya Allah, jikalau Engkau mengetahui bahwa perkara ini baik untuk agamaku, kehidupanku, dan akhir urusanku, maka takdirkanlah dan mudahkanlah bagiku, lalu berkahilah aku di dalamnya..."`,
+  translationEn: `"O Allah, I seek Your counsel through Your knowledge, and I seek ability through Your power, and I ask of Your great bounty. For You are capable and I am not, You know and I know not, and You are the Knower of the unseen. O Allah, if You know that this matter is good for me in my religion, my livelihood, and the end of my affairs, then decree it for me, make it easy for me, and bless me in it..."`,
+};
+
+export const VAULT_ITEMS: Record<string, AdhkarItem[]> = {
+  pagi: [
+    {
+      id: 'p1',
+      title: 'Sayyidul Istighfar (Leader of Forgiveness)',
+      arabic: 'اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ',
+      latin: "Allahumma Anta Rabbi la ilaha illa Anta, khalaqtani wa ana 'abduka, wa ana 'ala 'ahdika wa wa'dika mastatha'tu...",
+      meaning: 'Ya Allah, Engkaulah Tuhanku, tidak ada Tuhan yang berhak disembah selain Engkau. Engkau telah menciptakanku dan aku adalah hamba-Mu...',
+      count: '1x Subuh',
+      category: 'pagi',
+    },
+    {
+      id: 'p2',
+      title: 'Ayat Al-Kursi (Throne Verse)',
+      arabic: 'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ...',
+      latin: 'Allahu la ilaha illa Huwal-Hayyul-Qayyum, la ta’khudhuhu sinatun wa la nawm...',
+      meaning: 'Allah, tidak ada Tuhan selain Dia. Yang Mahahidup, Yang terus-menerus mengurus makhluk-Nya, tidak mengantuk dan tidak tidur...',
+      count: '1x Pagi',
+      category: 'pagi',
+    },
+    {
+      id: 'p3',
+      title: 'Perlindungan dari Kejahatan Segala Makhluk',
+      arabic: 'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',
+      latin: "Bismillahilladzi la yadhurru ma'asmihi syai'un fil-ardhi wa la fis-sama'i wa Huwas-Sami'ul-'Alim.",
+      meaning: 'Dengan nama Allah yang dengan nama-Nya tidak ada sesuatu pun di bumi maupun di langit yang dapat membahayakan, dan Dia Maha Mendengar lagi Maha Mengetahui.',
+      count: '3x Pagi',
+      category: 'pagi',
+    },
+    {
+      id: 'p4',
+      title: 'Keridhaan kepada Allah, Islam, & Nabi',
+      arabic: 'رَضِيتُ بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِمُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا',
+      latin: "Radhitubillahi Rabba, wa bil-Islami dina, wa bi Muhammadin shallallahu 'alaihi wa sallama Nabiyya.",
+      meaning: 'Aku rela Allah sebagai Tuhanku, Islam sebagai agamaku, dan Muhammad ﷺ sebagai Nabiku.',
+      count: '3x Pagi',
+      category: 'pagi',
+    },
+  ],
+  petang: [
+    {
+      id: 'pt1',
+      title: 'Dzikir Petang Pembuka',
+      arabic: 'أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
+      latin: 'Amsayna wa amsal-mulku lillah, wal-hamdu lillah, la ilaha illallahu wahdahu la syarika lah...',
+      meaning: 'Kami telah memasuki waktu petang dan kerajaan hanya milik Allah, segala puji bagi Allah...',
+      count: '1x Petang',
+      category: 'petang',
+    },
+    {
+      id: 'pt2',
+      title: "Mu'awwidzatain (Surah Al-Falaq & An-Nas)",
+      arabic: 'قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ... قُلْ أَعُوذُ بِرَبِّ النَّاسِ',
+      latin: "Qul a'udzu birabbil-falaq ... Qul a'udzu birabbin-nas",
+      meaning: 'Perlindungan komprehensif dari kejahatan malam, makhluk ciptaan, dan bisikan was-was setan.',
+      count: '3x Menjelang Maghrib',
+      category: 'petang',
+    },
+    {
+      id: 'pt3',
+      title: 'Memohon Keselamatan Dunia & Akhirat',
+      arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ',
+      latin: "Allahumma inni as'alukal-'afwa wal-'afiyata fid-dunya wal-akhirah.",
+      meaning: 'Ya Allah, sesungguhnya aku memohon ampunan dan keselamatan di dunia dan akhirat.',
+      count: '1x Petang',
+      category: 'petang',
+    },
+  ],
+  sholat: [
+    {
+      id: 's1',
+      title: 'Istighfar Setelah Salam',
+      arabic: 'أَسْتَغْفِرُ اللَّهَ، أَسْتَغْفِرُ اللَّهَ، أَسْتَغْفِرُ اللَّهَ. اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ',
+      latin: "Astaghfirullah (3x). Allahumma antas-salam wa minkas-salam tabarakta ya dhal-jalali wal-ikram.",
+      meaning: 'Aku memohon ampun kepada Allah (3x). Ya Allah, Engkaulah Yang Memberi Keselamatan dan dari-Mulah keselamatan, Mahasuci Engkau wahai Tuhan Pemilik Keagungan dan Kemuliaan.',
+      count: '3x Ba’da Salam',
+      category: 'sholat',
+    },
+    {
+      id: 's2',
+      title: 'Tasbih, Tahmid, Takbir (33x)',
+      arabic: 'سُبْحَانَ اللَّهِ (٣٣x) • الْحَمْدُ لِلَّهِ (٣٣x) • اللَّهُ أَكْبَرُ (٣٣x)',
+      latin: 'Subhanallah (33x), Alhamdulillah (33x), Allahu Akbar (33x)',
+      meaning: 'Maha Suci Allah, Segala Puji bagi Allah, Allah Maha Besar.',
+      count: '33x Setiap Sholat Fardhu',
+      category: 'sholat',
+    },
+    {
+      id: 's3',
+      title: 'Penyempurna Seratus (Tahlil)',
+      arabic: 'لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
+      latin: 'La ilaha illallahu wahdahu la syarika lah, lahul-mulku wa lahul-hamdu wa Huwa ‘ala kulli syai’in qadir.',
+      meaning: 'Tidak ada Tuhan selain Allah semata, tiada sekutu bagi-Nya...',
+      count: '1x Penutup',
+      category: 'sholat',
+    },
+  ],
+  harian: [
+    {
+      id: 'h1',
+      title: 'Doa Sebelum Tidur',
+      arabic: 'بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا',
+      latin: 'Bismikallahumma amutu wa ahya',
+      meaning: 'Dengan nama-Mu ya Allah, aku mati dan aku hidup.',
+      count: '1x Sebelum Rebah',
+      category: 'harian',
+    },
+    {
+      id: 'h2',
+      title: 'Doa Bangun Tidur',
+      arabic: 'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ',
+      latin: 'Alhamdulillahilladzi ahyana ba’da ma amatana wa ilaihin-nusyur.',
+      meaning: 'Segala puji bagi Allah yang menghidupkan kami setelah mematikan kami dan kepada-Nya kami dikumpulkan.',
+      count: '1x Saat Terjaga',
+      category: 'harian',
+    },
+    {
+      id: 'h3',
+      title: 'Doa Keluar Rumah / Safar',
+      arabic: 'بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',
+      latin: 'Bismillahi tawakkaltu ‘alallahi, la hawla wa la quwwata illa billah.',
+      meaning: 'Dengan nama Allah, aku bertawakal kepada Allah. Tiada daya dan kekuatan kecuali dengan pertolongan Allah.',
+      count: '1x Melangkah Keluar',
+      category: 'harian',
+    },
+  ],
+};

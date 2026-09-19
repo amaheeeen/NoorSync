@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "NoorSync - Islamic Companion & Prayer Times",
+  "short_name": "NoorSync",
+  "description": "Spatial liquid glass Islamic companion with offline prayer times, Qibla compass, and sholat tracking.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#041210",
+  "theme_color": "#041210",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

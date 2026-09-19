@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic: 'Amiri', 'Scheherazade New', serif;
+  --color-gold-300: #F3E5AB;
+  --color-gold-400: #EAD8B1;
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #AA8518;
+  --color-mint-300: #86EFAC;
+  --color-mint-400: #4ADE80;
+  --color-mint-500: #22C55E;
+  --color-midnight: #061917;
+}
+
+body {
+  background: radial-gradient(circle at 50% 0%, #113632 0%, #08211E 45%, #041210 100%);
+  color: #E2E8F0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  font-family: var(--font-sans);
+  font-feature-settings: 'tnum' on, 'cv02' on;
+}
+
+.tnum {
+  font-feature-settings: 'tnum' on;
+  font-variant-numeric: tabular-nums;
+}
+
+.touch-manipulation {
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Audio wave equalizer bars */
+@keyframes waveBar {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+.wave-bar-1 {
+  animation: waveBar 0.8s ease-in-out infinite;
+}
+.wave-bar-2 {
+  animation: waveBar 0.8s ease-in-out infinite 0.2s;
+}
+.wave-bar-3 {
+  animation: waveBar 0.8s ease-in-out infinite 0.4s;
+}
+
+/* Floating particle elevation */
+@keyframes floatUpFade {
+  0% {
+    opacity: 1;
+    transform: translateY(0px) scale(0.8);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(-24px) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-48px) scale(0.5);
+  }
+}
+
+.animate-particle-elevation {
+  animation: floatUpFade 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+.liquid-glass {
+  background: rgba(14, 40, 36, 0.55);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+.liquid-glass-accent {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(16, 44, 39, 0.6) 100%);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 14px 45px rgba(4, 25, 23, 0.5), inset 0 1px 2px rgba(243, 229, 171, 0.3);
+}
+
+.tab-active-pill {
+  background: linear-gradient(135deg, rgba(74, 222, 128, 0.25) 0%, rgba(16, 44, 39, 0.8) 100%);
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  box-shadow: 0 0 15px rgba(74, 222, 128, 0.25);
+}
+
+.shadow-glow-mint {
+  box-shadow: 0 0 25px -3px rgba(74, 222, 128, 0.35);
+}
+
+.shadow-glow-gold {
+  box-shadow: 0 0 25px -3px rgba(212, 175, 55, 0.35);
+}
+
+.shadow-glass {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Ambient animated orb */
+.ambient-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.38;
+  animation: floatSlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px) scale(1); }
+  100% { transform: translateY(40px) scale(1.15); }
+}
+
+/* Hide scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Tasbih Tap Pulse */
+@keyframes tapRing {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.08); opacity: 0.4; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+.tasbih-pulsing {
+  animation: tapRing 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
